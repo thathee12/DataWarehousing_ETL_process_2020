@@ -1,0 +1,967 @@
+<?xml version="1.0"?>
+<DataProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/sqlserver/2008/DataDebugger/">
+  <ProfileVersion>1.0</ProfileVersion>
+  <DataSources>
+    <DtsDataSource ID="{987191B9-5D8F-4DF8-BFFD-4DE0A312D9BE}" Name="DataProfilingFille">
+      <DtsConnectionManagerID>DataProfilingFille</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{BD335E42-00C4-4F39-A86A-4FDB5B0AD237}" Name="DataProfilingGame">
+      <DtsConnectionManagerID>DataProfilingGame</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{735CD22B-7111-4C00-BEEB-FA961C5D8547}" Name="DataProfilingGamePlay">
+      <DtsConnectionManagerID>DataProfilingGamePlay</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{AA7AC973-09DC-470C-A6B1-E0FF93C0DD0E}" Name="DataProfilingTeam">
+      <DtsConnectionManagerID>DataProfilingTeam</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{F44A09FE-95BE-4BCC-B0CE-B8423EE77B34}" Name="DataProfilingVenue">
+      <DtsConnectionManagerID>DataProfilingVenue</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{368C3A05-B3EB-40FF-BD0D-23394432648A}" Name="DESKTOP-UPMTO8O\SQLEXPRESS">
+      <DtsConnectionManagerID>DESKTOP-UPMTO8O\SQLEXPRESS</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{D75F854C-7BF1-47B3-BCEB-0029B4563A23}" Name="DESKTOP-UPMTO8O\SQLEXPRESS.Game_DW">
+      <DtsConnectionManagerID>DESKTOP-UPMTO8O\SQLEXPRESS.Game_DW</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{23DB0F4B-83B1-46E4-9969-EBD84D69E101}" Name="DESKTOP-UPMTO8O\SQLEXPRESS.Game_DW 1">
+      <DtsConnectionManagerID>DESKTOP-UPMTO8O\SQLEXPRESS.Game_DW 1</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{3A0EC096-D3E6-48F0-84DC-0C1A60ACE31F}" Name="DESKTOP-UPMTO8O\SQLEXPRESS.Game_DW 2">
+      <DtsConnectionManagerID>DESKTOP-UPMTO8O\SQLEXPRESS.Game_DW 2</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{9EBB8CB7-34E2-4CFE-82B2-B6BBA996A087}" Name="DESKTOP-UPMTO8O\SQLEXPRESS.Game_DW 3">
+      <DtsConnectionManagerID>DESKTOP-UPMTO8O\SQLEXPRESS.Game_DW 3</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{4BF60E59-0ED9-4754-802B-EECAF79E1816}" Name="DESKTOP-UPMTO8O\SQLEXPRESS.Game_DW 4">
+      <DtsConnectionManagerID>DESKTOP-UPMTO8O\SQLEXPRESS.Game_DW 4</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{028C81CC-5BBD-497C-B411-0926092901D8}" Name="DESKTOP-UPMTO8O\SQLEXPRESS.Game_DW 5">
+      <DtsConnectionManagerID>DESKTOP-UPMTO8O\SQLEXPRESS.Game_DW 5</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{8D553CD8-54D3-4932-B4EE-ABD284129572}" Name="DESKTOP-UPMTO8O\SQLEXPRESS.Game_DW 6">
+      <DtsConnectionManagerID>DESKTOP-UPMTO8O\SQLEXPRESS.Game_DW 6</DtsConnectionManagerID>
+    </DtsDataSource>
+  </DataSources>
+  <DataProfileInput>
+    <ProfileMode>Exact</ProfileMode>
+    <Timeout>0</Timeout>
+    <Requests>
+      <ColumnNullRatioProfileRequest ID="NullRatioReq">
+        <DataSourceID>{4BF60E59-0ED9-4754-802B-EECAF79E1816}</DataSourceID>
+        <Table Schema="dbo" Table="VenueStaging" />
+        <Column IsWildCard="true" />
+      </ColumnNullRatioProfileRequest>
+      <ColumnStatisticsProfileRequest ID="StatisticsReq">
+        <DataSourceID>{4BF60E59-0ED9-4754-802B-EECAF79E1816}</DataSourceID>
+        <Table Schema="dbo" Table="VenueStaging" />
+        <Column IsWildCard="true" />
+      </ColumnStatisticsProfileRequest>
+      <ColumnLengthDistributionProfileRequest ID="LengthDistReq">
+        <DataSourceID>{4BF60E59-0ED9-4754-802B-EECAF79E1816}</DataSourceID>
+        <Table Schema="dbo" Table="VenueStaging" />
+        <Column IsWildCard="true" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+      </ColumnLengthDistributionProfileRequest>
+      <ColumnValueDistributionProfileRequest ID="ValueDistReq">
+        <DataSourceID>{4BF60E59-0ED9-4754-802B-EECAF79E1816}</DataSourceID>
+        <Table Schema="dbo" Table="VenueStaging" />
+        <Column IsWildCard="true" />
+        <Option>FrequentValues</Option>
+        <FrequentValueThreshold>0.001</FrequentValueThreshold>
+      </ColumnValueDistributionProfileRequest>
+      <ColumnPatternProfileRequest ID="PatternReq">
+        <DataSourceID>{4BF60E59-0ED9-4754-802B-EECAF79E1816}</DataSourceID>
+        <Table Schema="dbo" Table="VenueStaging" />
+        <Column IsWildCard="true" />
+        <MaxNumberOfPatterns>10</MaxNumberOfPatterns>
+        <PercentageDataCoverageDesired>95</PercentageDataCoverageDesired>
+        <CaseSensitive>false</CaseSensitive>
+        <Delimiters> \t\r\n</Delimiters>
+        <Symbols>,.;:-"'`~=&amp;/\\@!?()&lt;&gt;[]{}|#*^%</Symbols>
+        <TagTableName />
+      </ColumnPatternProfileRequest>
+      <CandidateKeyProfileRequest ID="KeyReq">
+        <DataSourceID>{4BF60E59-0ED9-4754-802B-EECAF79E1816}</DataSourceID>
+        <Table Schema="dbo" Table="VenueStaging" />
+        <KeyColumns>
+          <Column IsWildCard="true" />
+        </KeyColumns>
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <KeyStrengthThreshold>0.95</KeyStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </CandidateKeyProfileRequest>
+      <FunctionalDependencyProfileRequest ID="FDReq">
+        <DataSourceID>{4BF60E59-0ED9-4754-802B-EECAF79E1816}</DataSourceID>
+        <Table Schema="dbo" Table="VenueStaging" />
+        <DeterminantColumns>
+          <Column IsWildCard="true" />
+        </DeterminantColumns>
+        <DependentColumn IsWildCard="true" />
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <FDStrengthThreshold>0.95</FDStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </FunctionalDependencyProfileRequest>
+    </Requests>
+  </DataProfileInput>
+  <DataProfileOutput>
+    <Profiles>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{4BF60E59-0ED9-4754-802B-EECAF79E1816}</DataSourceID>
+        <Table DataSource="DESKTOP-UPMTO8O\SQLEXPRESS" Database="Game_DW" Schema="dbo" Table="VenueStaging" RowCount="11434" />
+        <Column Name="game_id" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{4BF60E59-0ED9-4754-802B-EECAF79E1816}</DataSourceID>
+        <Table DataSource="DESKTOP-UPMTO8O\SQLEXPRESS" Database="Game_DW" Schema="dbo" Table="VenueStaging" RowCount="11434" />
+        <Column Name="venue" SqlDbType="NVarChar" MaxLength="255" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{4BF60E59-0ED9-4754-802B-EECAF79E1816}</DataSourceID>
+        <Table DataSource="DESKTOP-UPMTO8O\SQLEXPRESS" Database="Game_DW" Schema="dbo" Table="VenueStaging" RowCount="11434" />
+        <Column Name="venue_link" SqlDbType="NVarChar" MaxLength="255" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{4BF60E59-0ED9-4754-802B-EECAF79E1816}</DataSourceID>
+        <Table DataSource="DESKTOP-UPMTO8O\SQLEXPRESS" Database="Game_DW" Schema="dbo" Table="VenueStaging" RowCount="11434" />
+        <Column Name="venue_time_zone_id" SqlDbType="NVarChar" MaxLength="255" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{4BF60E59-0ED9-4754-802B-EECAF79E1816}</DataSourceID>
+        <Table DataSource="DESKTOP-UPMTO8O\SQLEXPRESS" Database="Game_DW" Schema="dbo" Table="VenueStaging" RowCount="11434" />
+        <Column Name="venue_time_zone_offset" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{4BF60E59-0ED9-4754-802B-EECAF79E1816}</DataSourceID>
+        <Table DataSource="DESKTOP-UPMTO8O\SQLEXPRESS" Database="Game_DW" Schema="dbo" Table="VenueStaging" RowCount="11434" />
+        <Column Name="venue_time_zone_tz" SqlDbType="NVarChar" MaxLength="255" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnStatisticsProfile IsExact="true" ProfileRequestID="StatisticsReq">
+        <DataSourceID>{4BF60E59-0ED9-4754-802B-EECAF79E1816}</DataSourceID>
+        <Table DataSource="DESKTOP-UPMTO8O\SQLEXPRESS" Database="Game_DW" Schema="dbo" Table="VenueStaging" RowCount="11434" />
+        <Column Name="game_id" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <MinValue>2010020001</MinValue>
+        <MaxValue>2018030417</MaxValue>
+        <Mean>2014134352.43493</Mean>
+        <StdDev>2609504.82621084</StdDev>
+      </ColumnStatisticsProfile>
+      <ColumnStatisticsProfile IsExact="true" ProfileRequestID="StatisticsReq">
+        <DataSourceID>{4BF60E59-0ED9-4754-802B-EECAF79E1816}</DataSourceID>
+        <Table DataSource="DESKTOP-UPMTO8O\SQLEXPRESS" Database="Game_DW" Schema="dbo" Table="VenueStaging" RowCount="11434" />
+        <Column Name="venue_time_zone_offset" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <MinValue>-8</MinValue>
+        <MaxValue>-4</MaxValue>
+        <Mean>-5.00122441840126</Mean>
+        <StdDev>1.18152883805253</StdDev>
+      </ColumnStatisticsProfile>
+      <ColumnLengthDistributionProfile ProfileRequestID="LengthDistReq" IsExact="true">
+        <DataSourceID>{4BF60E59-0ED9-4754-802B-EECAF79E1816}</DataSourceID>
+        <Table DataSource="DESKTOP-UPMTO8O\SQLEXPRESS" Database="Game_DW" Schema="dbo" Table="VenueStaging" RowCount="11434" />
+        <Column Name="venue" SqlDbType="NVarChar" MaxLength="255" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+        <MinLength>8</MinLength>
+        <MaxLength>34</MaxLength>
+        <LengthDistribution>
+          <LengthDistributionItem>
+            <Length>23</Length>
+            <Count>122</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>9</Length>
+            <Count>691</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>15</Length>
+            <Count>637</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>12</Length>
+            <Count>1722</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>21</Length>
+            <Count>856</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>24</Length>
+            <Count>368</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>18</Length>
+            <Count>744</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>10</Length>
+            <Count>351</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>19</Length>
+            <Count>86</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>25</Length>
+            <Count>23</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>13</Length>
+            <Count>439</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>22</Length>
+            <Count>280</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>16</Length>
+            <Count>1367</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>17</Length>
+            <Count>1227</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>34</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>11</Length>
+            <Count>650</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>20</Length>
+            <Count>854</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>14</Length>
+            <Count>1015</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>8</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+        </LengthDistribution>
+      </ColumnLengthDistributionProfile>
+      <ColumnLengthDistributionProfile ProfileRequestID="LengthDistReq" IsExact="true">
+        <DataSourceID>{4BF60E59-0ED9-4754-802B-EECAF79E1816}</DataSourceID>
+        <Table DataSource="DESKTOP-UPMTO8O\SQLEXPRESS" Database="Game_DW" Schema="dbo" Table="VenueStaging" RowCount="11434" />
+        <Column Name="venue_link" SqlDbType="NVarChar" MaxLength="255" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+        <MinLength>19</MinLength>
+        <MaxLength>19</MaxLength>
+        <LengthDistribution>
+          <LengthDistributionItem>
+            <Length>19</Length>
+            <Count>11434</Count>
+          </LengthDistributionItem>
+        </LengthDistribution>
+      </ColumnLengthDistributionProfile>
+      <ColumnLengthDistributionProfile ProfileRequestID="LengthDistReq" IsExact="true">
+        <DataSourceID>{4BF60E59-0ED9-4754-802B-EECAF79E1816}</DataSourceID>
+        <Table DataSource="DESKTOP-UPMTO8O\SQLEXPRESS" Database="Game_DW" Schema="dbo" Table="VenueStaging" RowCount="11434" />
+        <Column Name="venue_time_zone_id" SqlDbType="NVarChar" MaxLength="255" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+        <MinLength>14</MinLength>
+        <MaxLength>19</MaxLength>
+        <LengthDistribution>
+          <LengthDistributionItem>
+            <Length>15</Length>
+            <Count>3024</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>19</Length>
+            <Count>1278</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>16</Length>
+            <Count>6032</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>17</Length>
+            <Count>374</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>14</Length>
+            <Count>726</Count>
+          </LengthDistributionItem>
+        </LengthDistribution>
+      </ColumnLengthDistributionProfile>
+      <ColumnLengthDistributionProfile ProfileRequestID="LengthDistReq" IsExact="true">
+        <DataSourceID>{4BF60E59-0ED9-4754-802B-EECAF79E1816}</DataSourceID>
+        <Table DataSource="DESKTOP-UPMTO8O\SQLEXPRESS" Database="Game_DW" Schema="dbo" Table="VenueStaging" RowCount="11434" />
+        <Column Name="venue_time_zone_tz" SqlDbType="NVarChar" MaxLength="255" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+        <MinLength>3</MinLength>
+        <MaxLength>3</MaxLength>
+        <LengthDistribution>
+          <LengthDistributionItem>
+            <Length>3</Length>
+            <Count>11434</Count>
+          </LengthDistributionItem>
+        </LengthDistribution>
+      </ColumnLengthDistributionProfile>
+      <CandidateKeyProfile IsExact="true" ProfileRequestID="KeyReq">
+        <DataSourceID>{4BF60E59-0ED9-4754-802B-EECAF79E1816}</DataSourceID>
+        <Table DataSource="DESKTOP-UPMTO8O\SQLEXPRESS" Database="Game_DW" Schema="dbo" Table="VenueStaging" RowCount="11434" />
+        <KeyColumns>
+          <Column Name="game_id" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </KeyColumns>
+        <IsExactKey>true</IsExactKey>
+      </CandidateKeyProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq">
+        <DataSourceID>{4BF60E59-0ED9-4754-802B-EECAF79E1816}</DataSourceID>
+        <Table DataSource="DESKTOP-UPMTO8O\SQLEXPRESS" Database="Game_DW" Schema="dbo" Table="VenueStaging" RowCount="11434" />
+        <Column Name="game_id" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>11434</NumberOfDistinctValues>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq">
+        <DataSourceID>{4BF60E59-0ED9-4754-802B-EECAF79E1816}</DataSourceID>
+        <Table DataSource="DESKTOP-UPMTO8O\SQLEXPRESS" Database="Game_DW" Schema="dbo" Table="VenueStaging" RowCount="11434" />
+        <Column Name="venue" SqlDbType="NVarChar" MaxLength="255" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>77</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>Prudential Center</Value>
+            <Count>363</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>TD Garden</Value>
+            <Count>408</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Joe Louis Arena</Value>
+            <Count>289</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Jobing.com Arena</Value>
+            <Count>157</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>BankAtlantic Center</Value>
+            <Count>86</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>United Center</Value>
+            <Count>395</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Rexall Place</Value>
+            <Count>229</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>First Niagara Center</Value>
+            <Count>187</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>NYCB Live/Nassau Coliseum</Value>
+            <Count>23</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Centre Bell</Value>
+            <Count>375</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Scotiabank Saddledome</Value>
+            <Count>361</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Philips Arena</Value>
+            <Count>41</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Scotiabank Place</Value>
+            <Count>113</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Pepsi Center</Value>
+            <Count>362</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Air Canada Centre</Value>
+            <Count>319</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Enterprise Center</Value>
+            <Count>54</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Bell MTS Place</Value>
+            <Count>93</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Canadian Tire Centre</Value>
+            <Count>256</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>PPG Paints Arena</Value>
+            <Count>143</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Amalie Arena</Value>
+            <Count>239</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>St. Pete Times Forum</Value>
+            <Count>64</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Rogers Arena</Value>
+            <Count>373</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>KeyBank Center</Value>
+            <Count>122</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Scottrade Center</Value>
+            <Count>339</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Little Caesars Arena</Value>
+            <Count>82</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Nassau Coliseum</Value>
+            <Count>193</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Staples Center</Value>
+            <Count>387</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Wells Fargo Center</Value>
+            <Count>371</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Tampa Bay Times Forum</Value>
+            <Count>93</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Xcel Energy Center</Value>
+            <Count>371</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Capital One Arena</Value>
+            <Count>96</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Scotiabank Arena</Value>
+            <Count>44</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Gila River Arena</Value>
+            <Count>205</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>HSBC Arena</Value>
+            <Count>44</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Nationwide Arena</Value>
+            <Count>364</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>RBC Center</Value>
+            <Count>76</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>American Airlines Center</Value>
+            <Count>368</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Verizon Center</Value>
+            <Count>304</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Bridgestone Arena</Value>
+            <Count>393</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>BB&amp;T Center</Value>
+            <Count>272</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Rogers Place</Value>
+            <Count>129</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>CONSOL Energy Center</Value>
+            <Count>265</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>T-Mobile Arena</Value>
+            <Count>95</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Honda Center</Value>
+            <Count>389</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>SAP Center at San Jose</Value>
+            <Count>280</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>PNC Arena</Value>
+            <Count>282</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Barclays Center</Value>
+            <Count>150</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Madison Square Garden</Value>
+            <Count>401</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>MTS Centre</Value>
+            <Count>230</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>HP Pavilion at San Jose</Value>
+            <Count>121</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq">
+        <DataSourceID>{4BF60E59-0ED9-4754-802B-EECAF79E1816}</DataSourceID>
+        <Table DataSource="DESKTOP-UPMTO8O\SQLEXPRESS" Database="Game_DW" Schema="dbo" Table="VenueStaging" RowCount="11434" />
+        <Column Name="venue_link" SqlDbType="NVarChar" MaxLength="255" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>29</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>/api/v1/venues/5030</Value>
+            <Count>44</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>/api/v1/venues/5019</Value>
+            <Count>47</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>/api/v1/venues/5145</Value>
+            <Count>41</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>/api/v1/venues/5075</Value>
+            <Count>44</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>/api/v1/venues/5054</Value>
+            <Count>41</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>/api/v1/venues/5064</Value>
+            <Count>46</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>/api/v1/venues/5027</Value>
+            <Count>40</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>/api/v1/venues/5059</Value>
+            <Count>46</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>/api/v1/venues/5058</Value>
+            <Count>43</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>/api/v1/venues/5085</Value>
+            <Count>54</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>/api/v1/venues/5076</Value>
+            <Count>54</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>/api/v1/venues/5043</Value>
+            <Count>41</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>/api/v1/venues/5096</Value>
+            <Count>40</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>/api/v1/venues/5100</Value>
+            <Count>41</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>/api/v1/venues/5026</Value>
+            <Count>22</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>/api/v1/venues/5031</Value>
+            <Count>41</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>/api/v1/venues/5034</Value>
+            <Count>43</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>/api/v1/venues/5066</Value>
+            <Count>48</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>/api/v1/venues/5017</Value>
+            <Count>43</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>/api/v1/venues/null</Value>
+            <Count>10319</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>/api/v1/venues/5178</Value>
+            <Count>44</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>/api/v1/venues/5094</Value>
+            <Count>45</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>/api/v1/venues/5073</Value>
+            <Count>41</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>/api/v1/venues/5098</Value>
+            <Count>41</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>/api/v1/venues/5046</Value>
+            <Count>41</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>/api/v1/venues/5092</Value>
+            <Count>40</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>/api/v1/venues/5039</Value>
+            <Count>41</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq">
+        <DataSourceID>{4BF60E59-0ED9-4754-802B-EECAF79E1816}</DataSourceID>
+        <Table DataSource="DESKTOP-UPMTO8O\SQLEXPRESS" Database="Game_DW" Schema="dbo" Table="VenueStaging" RowCount="11434" />
+        <Column Name="venue_time_zone_id" SqlDbType="NVarChar" MaxLength="255" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>11</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>America/Detroit</Value>
+            <Count>372</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>America/Los_Angeles</Value>
+            <Count>1278</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>America/Edmonton</Value>
+            <Count>358</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>America/New_York</Value>
+            <Count>4974</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>America/Denver</Value>
+            <Count>726</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>America/Phoenix</Value>
+            <Count>363</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>America/Winnipeg</Value>
+            <Count>325</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>America/Chicago</Value>
+            <Count>1925</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>America/Vancouver</Value>
+            <Count>374</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>America/Montreal</Value>
+            <Count>375</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>America/Toronto</Value>
+            <Count>364</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq">
+        <DataSourceID>{4BF60E59-0ED9-4754-802B-EECAF79E1816}</DataSourceID>
+        <Table DataSource="DESKTOP-UPMTO8O\SQLEXPRESS" Database="Game_DW" Schema="dbo" Table="VenueStaging" RowCount="11434" />
+        <Column Name="venue_time_zone_offset" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>5</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>-5</Value>
+            <Count>2589</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>-8</Value>
+            <Count>158</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>-6</Value>
+            <Count>1187</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>-4</Value>
+            <Count>5549</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>-7</Value>
+            <Count>1951</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq">
+        <DataSourceID>{4BF60E59-0ED9-4754-802B-EECAF79E1816}</DataSourceID>
+        <Table DataSource="DESKTOP-UPMTO8O\SQLEXPRESS" Database="Game_DW" Schema="dbo" Table="VenueStaging" RowCount="11434" />
+        <Column Name="venue_time_zone_tz" SqlDbType="NVarChar" MaxLength="255" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>8</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>EDT</Value>
+            <Count>5549</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>MST</Value>
+            <Count>457</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>PST</Value>
+            <Count>158</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>CST</Value>
+            <Count>197</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>CDT</Value>
+            <Count>2053</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>PDT</Value>
+            <Count>1494</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>MDT</Value>
+            <Count>990</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>EST</Value>
+            <Count>536</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnPatternProfile ProfileRequestID="PatternReq" IsExact="false">
+        <DataSourceID>{4BF60E59-0ED9-4754-802B-EECAF79E1816}</DataSourceID>
+        <Table DataSource="DESKTOP-UPMTO8O\SQLEXPRESS" Database="Game_DW" Schema="dbo" Table="VenueStaging" RowCount="11434" />
+        <Column Name="venue" SqlDbType="NVarChar" MaxLength="255" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <TopRegexPatterns>
+          <PatternDistributionItem>
+            <RegexText>(\p{L}+ )+CENTER</RegexText>
+            <Frequency>41</Frequency>
+          </PatternDistributionItem>
+          <PatternDistributionItem>
+            <RegexText>(\p{L}+ )+ARENA</RegexText>
+            <Frequency>23</Frequency>
+          </PatternDistributionItem>
+          <PatternDistributionItem>
+            <RegexText>(\p{L}+ )+CENTRE</RegexText>
+            <Frequency>7</Frequency>
+          </PatternDistributionItem>
+          <PatternDistributionItem>
+            <RegexText>\p{L}+ \p{L}+</RegexText>
+            <Frequency>16</Frequency>
+          </PatternDistributionItem>
+          <PatternDistributionItem>
+            <RegexText>\p{L}+ \p{L}+ \p{L}+</RegexText>
+            <Frequency>5</Frequency>
+          </PatternDistributionItem>
+          <PatternDistributionItem>
+            <RegexText>(\p{L}+ )+</RegexText>
+            <Frequency>4</Frequency>
+          </PatternDistributionItem>
+          <PatternDistributionItem>
+            <RegexText>.*</RegexText>
+            <Frequency>5</Frequency>
+          </PatternDistributionItem>
+        </TopRegexPatterns>
+      </ColumnPatternProfile>
+      <ColumnPatternProfile ProfileRequestID="PatternReq" IsExact="false">
+        <DataSourceID>{4BF60E59-0ED9-4754-802B-EECAF79E1816}</DataSourceID>
+        <Table DataSource="DESKTOP-UPMTO8O\SQLEXPRESS" Database="Game_DW" Schema="dbo" Table="VenueStaging" RowCount="11434" />
+        <Column Name="venue_link" SqlDbType="NVarChar" MaxLength="255" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <TopRegexPatterns>
+          <PatternDistributionItem>
+            <RegexText>/API/V1/VENUES/NULL</RegexText>
+            <Frequency>90</Frequency>
+          </PatternDistributionItem>
+          <PatternDistributionItem>
+            <RegexText>/API/V1/VENUES/\d\d\d\d</RegexText>
+            <Frequency>10</Frequency>
+          </PatternDistributionItem>
+        </TopRegexPatterns>
+      </ColumnPatternProfile>
+      <ColumnPatternProfile ProfileRequestID="PatternReq" IsExact="false">
+        <DataSourceID>{4BF60E59-0ED9-4754-802B-EECAF79E1816}</DataSourceID>
+        <Table DataSource="DESKTOP-UPMTO8O\SQLEXPRESS" Database="Game_DW" Schema="dbo" Table="VenueStaging" RowCount="11434" />
+        <Column Name="venue_time_zone_id" SqlDbType="NVarChar" MaxLength="255" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <TopRegexPatterns>
+          <PatternDistributionItem>
+            <RegexText>AMERICA/NEW_YORK</RegexText>
+            <Frequency>42</Frequency>
+          </PatternDistributionItem>
+          <PatternDistributionItem>
+            <RegexText>AMERICA/\p{L}+</RegexText>
+            <Frequency>46</Frequency>
+          </PatternDistributionItem>
+          <PatternDistributionItem>
+            <RegexText>AMERICA/LOS_ANGELES</RegexText>
+            <Frequency>11</Frequency>
+          </PatternDistributionItem>
+        </TopRegexPatterns>
+      </ColumnPatternProfile>
+      <ColumnPatternProfile ProfileRequestID="PatternReq" IsExact="false">
+        <DataSourceID>{4BF60E59-0ED9-4754-802B-EECAF79E1816}</DataSourceID>
+        <Table DataSource="DESKTOP-UPMTO8O\SQLEXPRESS" Database="Game_DW" Schema="dbo" Table="VenueStaging" RowCount="11434" />
+        <Column Name="venue_time_zone_tz" SqlDbType="NVarChar" MaxLength="255" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <TopRegexPatterns>
+          <PatternDistributionItem>
+            <RegexText>EDT</RegexText>
+            <Frequency>48</Frequency>
+          </PatternDistributionItem>
+          <PatternDistributionItem>
+            <RegexText>CDT</RegexText>
+            <Frequency>18</Frequency>
+          </PatternDistributionItem>
+          <PatternDistributionItem>
+            <RegexText>PDT</RegexText>
+            <Frequency>13</Frequency>
+          </PatternDistributionItem>
+          <PatternDistributionItem>
+            <RegexText>MDT</RegexText>
+            <Frequency>9</Frequency>
+          </PatternDistributionItem>
+          <PatternDistributionItem>
+            <RegexText>\p{L}+</RegexText>
+            <Frequency>12</Frequency>
+          </PatternDistributionItem>
+        </TopRegexPatterns>
+      </ColumnPatternProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="">
+        <DataSourceID>{4BF60E59-0ED9-4754-802B-EECAF79E1816}</DataSourceID>
+        <Table DataSource="DESKTOP-UPMTO8O\SQLEXPRESS" Database="Game_DW" Schema="dbo" Table="VenueStaging" RowCount="11434" />
+        <DeterminantColumns>
+          <Column Name="game_id" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="venue_time_zone_tz" SqlDbType="NVarChar" MaxLength="255" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="">
+        <DataSourceID>{4BF60E59-0ED9-4754-802B-EECAF79E1816}</DataSourceID>
+        <Table DataSource="DESKTOP-UPMTO8O\SQLEXPRESS" Database="Game_DW" Schema="dbo" Table="VenueStaging" RowCount="11434" />
+        <DeterminantColumns>
+          <Column Name="game_id" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="venue_time_zone_offset" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="">
+        <DataSourceID>{4BF60E59-0ED9-4754-802B-EECAF79E1816}</DataSourceID>
+        <Table DataSource="DESKTOP-UPMTO8O\SQLEXPRESS" Database="Game_DW" Schema="dbo" Table="VenueStaging" RowCount="11434" />
+        <DeterminantColumns>
+          <Column Name="game_id" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="venue_time_zone_id" SqlDbType="NVarChar" MaxLength="255" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="">
+        <DataSourceID>{4BF60E59-0ED9-4754-802B-EECAF79E1816}</DataSourceID>
+        <Table DataSource="DESKTOP-UPMTO8O\SQLEXPRESS" Database="Game_DW" Schema="dbo" Table="VenueStaging" RowCount="11434" />
+        <DeterminantColumns>
+          <Column Name="game_id" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="venue_link" SqlDbType="NVarChar" MaxLength="255" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="">
+        <DataSourceID>{4BF60E59-0ED9-4754-802B-EECAF79E1816}</DataSourceID>
+        <Table DataSource="DESKTOP-UPMTO8O\SQLEXPRESS" Database="Game_DW" Schema="dbo" Table="VenueStaging" RowCount="11434" />
+        <DeterminantColumns>
+          <Column Name="game_id" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="venue" SqlDbType="NVarChar" MaxLength="255" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="FDReq">
+        <DataSourceID>{4BF60E59-0ED9-4754-802B-EECAF79E1816}</DataSourceID>
+        <Table DataSource="DESKTOP-UPMTO8O\SQLEXPRESS" Database="Game_DW" Schema="dbo" Table="VenueStaging" RowCount="11434" />
+        <DeterminantColumns>
+          <Column Name="venue_time_zone_tz" SqlDbType="NVarChar" MaxLength="255" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="venue_time_zone_offset" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="FDReq">
+        <DataSourceID>{4BF60E59-0ED9-4754-802B-EECAF79E1816}</DataSourceID>
+        <Table DataSource="DESKTOP-UPMTO8O\SQLEXPRESS" Database="Game_DW" Schema="dbo" Table="VenueStaging" RowCount="11434" />
+        <DeterminantColumns>
+          <Column Name="venue" SqlDbType="NVarChar" MaxLength="255" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="venue_time_zone_id" SqlDbType="NVarChar" MaxLength="255" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>false</IsExactFD>
+        <FDStrength>0.9994752</FDStrength>
+        <FDViolations>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>Ericsson Globe</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>America/Los_Angeles</DependentValue>
+            <SupportCount>3</SupportCount>
+            <ViolationCount>3</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>Hartwall Areena</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>America/New_York</DependentValue>
+            <SupportCount>2</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>Hartwall Arena</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>America/Winnipeg</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+          <FDViolationItem>
+            <DeterminantValues>
+              <ColumnValue>O2 Czech Republic</ColumnValue>
+            </DeterminantValues>
+            <DependentValue>America/Phoenix</DependentValue>
+            <SupportCount>1</SupportCount>
+            <ViolationCount>1</ViolationCount>
+          </FDViolationItem>
+        </FDViolations>
+      </FunctionalDependencyProfile>
+    </Profiles>
+  </DataProfileOutput>
+</DataProfile>
